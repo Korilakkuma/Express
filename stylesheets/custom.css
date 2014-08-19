@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+@viewport {
+    width:extend-to-zoom 100%;
+    zoom:1.0;
+    user-zoom:zoom;  /*or fixed*/
+}
+
+@font-face {
+  font-family:"fontello";
+  src: url("../font/fontello.eot?74265480");
+  src: url("../font/fontello.eot?74265480#iefix") format("embedded-opentype"),
+       url("../font/fontello.woff?74265480") format("woff"),
+       url("../font/fontello.ttf?74265480") format("truetype"),
+       url("../font/fontello.svg?74265480#fontello") format("svg");
+  font-weight:normal;
+  font-style:normal;
+}
+
+html, body {min-width:320px;}
+
+#download-application {
+    display:block;
+    margin:0px auto;
+    /*border:3px solid rgba(153, 153, 153, 1.0);*/
+    width:80%;
+    height:48px;
+    line-height:48px;
+    color:rgba(153, 153, 153, 1.0);
+    font-family: 'Lucida Grande', 'Calibri', Helvetica, Arial, sans-serif;
+    font-size:20px;
+    font-weight:bold;
+    text-align:center;
+    text-decoration:none;
+    text-shadow:-1px -1px 1px rgba(0, 0, 0, 0.6);
+
+    -webkit-font-smoothing:antialiased;
+
+    background-color:rgba(51, 51, 51, 1.0);
+    background-image:-webkit-gradient(linear, left top, left bottom, from(#666), to(#333));
+    background-image:-webkit-linear-gradient(top, #666, #333);
+    background-image:   -moz-linear-gradient(top, #666, #333);
+    background-image:     -o-linear-gradient(top, #666, #333);
+    background-image:        linear-gradient(top, #666, #333);
+
+    -webkit-border-radius:25px;
+       -moz-border-radius:25px;
+            border-radius:25px;
+
+    -webkit-box-shadow:0px 0px 1px 4px rgba(0, 0, 0, 0.2);
+       -moz-box-shadow:0px 0px 1px 4px rgba(0, 0, 0, 0.2);
+            box-shadow:0px 0px 1px 4px rgba(0, 0, 0, 0.2);
+
+    -webkit-transition:color 1s ease 0s;
+       -moz-transition:color 1s ease 0s;
+            transition:color 1s ease 0s;
+}
+
+#download-application:hover  {color:rgba(255, 255, 255, 1.0);}
+#download-application:active {background-image:none;}
+
+.icon-download:before {
+    content:"\e801";
+    margin-right:6px;
+    font-family:"fontello";
+}
+
+h1 + article p:last-child       {text-align:center;}
+h1 + article p:last-child small {font-size:12px;}
+
+#main_content h2 {font-style:italic;}
+
+figure {margin:0px auto; text-align:center;}
+    figure img {max-width:100%;}
+    figure figcaption {margin-top:-24px; padding-bottom:24px;font-size:12px; text-align:center;}

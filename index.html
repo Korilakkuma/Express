@@ -1,62 +1,180 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<title>Express | Android Application</title>
+<meta name="description" content="「素早く・簡単」をコンセプトにした手書きのプレゼンテーションアプリケーション" />
+<meta name="keywords" content="Express, Android, プレゼンテーション" />
+<meta name="author" content="池田友洋, Tomohiro IKEDA, rilakkuma3xjapan" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes" />
+<meta name="format-detection" content="telephone=no" />
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon-precomposed" href="images/icon.png" />
+<link rel="stylesheet" href="stylesheets/stylesheet.css" type="text/css" media="all" />
+<link rel="stylesheet" href="stylesheets/custom.css" type="text/css" media="all" />
+</head>
 
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="Express : Android Application">
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+<body>
 
-    <title>Express</title>
-  </head>
+<!-- HEADER -->
+<div id="header_wrap" class="outer">
+    <header class="inner">
+        <!--<a id="forkme_banner" href="https://github.com/Korilakkuma/Express">View on GitHub</a>-->
 
-  <body>
+        <h1 id="project_title">Express</h1>
+        <h2 id="project_tagline">Android Application</h2>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/Korilakkuma/Express">View on GitHub</a>
+        <!--
+        <section id="downloads">
+            <a class="zip_download_link" href="https://github.com/Korilakkuma/Express/zipball/master">Download this project as a .zip file</a>
+            <a class="tar_download_link" href="https://github.com/Korilakkuma/Express/tarball/master">Download this project as a tar.gz file</a>
+        </section>
+        -->
+    </header>
+</div>
 
-          <h1 id="project_title">Express</h1>
-          <h2 id="project_tagline">Android Application</h2>
+<!-- MAIN CONTENT -->
+<div id="main_content_wrap" class="outer">
+    <section id="main_content" class="inner">
+        <h1><a name="express" class="anchor" href="#express"><span class="octicon octicon-link"></span></a>Express</h1>
+        <article>
+            <p>
+                Expressは, 「素早く・簡単」をコンセプトにしたプレゼンテーションアプリです.
+            </p>
+            <p>
+                <a href="app/Express.apk" id="download-application" target="_blank"><span class="icon-download"></span>Download</a>
+            </p>
+            <p>
+                <small>Android 4.0 以上を推奨</small>
+            </p>
+        </article>
+        <h2>Edit</h2>
+        <section>
+            <h3>編集画面へ遷移</h3>
+            <article>
+                <figure>
+                    <img src="images/screenshots/screenshot-01-300x400.png" alt="アプリケーション起動画面" />
+                    <img src="images/screenshots/screenshot-02-300x400.png" alt="プレゼンテーションスライド編集画面" />
+                    <figcaption>起動画面と編集画面</figcaption>
+                </figure>
+                <p>
+                    アプリケーションを起動したら, 5つ並んだ正方形のいずれかを長押しします.
+                </p>
+            </article>
+        </section>
+        <section>
+            <h3>編集</h3>
+            <article>
+                <figure>
+                    <img src="images/screenshots/screenshot-03-300x400.png" alt="プレゼンテーションスライド編集画面" />
+                    <img src="images/screenshots/screenshot-04-300x400.png" alt="プレゼンテーションスライド編集画面" />
+                    <figcaption>プレゼンテーションスライド編集画面</figcaption>
+                </figure>
+                <ul>
+                    <li>手書きツール以外にも, 矩形や円, 2次ベジュ曲線などの図形, テキストも描画可能です</li>
+                    <li>カラーやラインの幅, ぼかし量などのスタイルも調整可能です</li>
+                    <li>カメラで撮影した画像を編集することも可能です</li>
+                    <li>Undo / Redo, 消しゴム, クリア機能など編集に必要な基本機能も備えています</li>
+                </ul>
+            </article>
+        </section>
+        <article>
+            <figure>
+                <img src="images/screenshots/screenshot-05-300x400.png" alt="プレゼンテーションプレビュー画面" />
+                <img src="images/screenshots/screenshot-06-300x400.png" alt="プレゼンテーションプレビュー画面" />
+                <figcaption>プレゼンテーションプレビュー画面</figcaption>
+            </figure>
+            <p>
+                編集が終了したら, Returnボタンを押してプレゼンテーションページへ戻ります.
+                再編集することは可能なので, 安心して戻ってください.
+            </p>
+            <p>
+                同じ要領で, プレゼンテーションスライドを作成します.
+                最大で5枚まで作成可能ですが, すべて作成する必要はありません.
+            </p>
+            <p>
+                編集したサムネイルをタップすることで, プレゼンテーションのプレビューが可能です.
+            </p>
+        </article>
+        <h2>Share</h2>
+        <section>
+            <h3>共有ページの作成</h3>
+            <article>
+                <figure>
+                    <img src="images/screenshots/screenshot-07-300x400.png" alt="共有ページの作成中" />
+                    <img src="images/screenshots/screenshot-08-300x400.png" alt="共有ページの作成完了" />
+                    <figcaption>共有ページの作成</figcaption>
+                </figure>
+                <p>
+                    プレゼンテーションスライドの編集が完了したら, プレゼンテーションページにあるShareボタンを押します.
+                    それによって, 編集したプレゼンテーションスライドと同じWebページが作成されます.
+                </p>
+            </article>
+        </section>
+        <section>
+            <h3>共有</h3>
+            <article>
+                <figure>
+                    <img src="images/screenshots/screenshot-09-300x400.png" alt="共有ページ (上部)" />
+                    <img src="images/screenshots/screenshot-10-300x400.png" alt="共有ページ (下部)" />
+                    <figcaption>共有ページ</figcaption>
+                </figure>
+                <p>
+                    作成されたWebページからメーラーを起動することで, 簡単にURLを共有可能です.
+                </p>
+                <p>
+                    また, 作成されたWebページはレスポンシブレイアウトとなっているので,
+                    ブラウザを搭載しているデバイスごとに最適化されたサイズで閲覧可能となっています.
+                </p>
+                <p>
+                   さらに, ApplicationCacheによってキャッシュされるので,
+                   1度ページを閲覧すれば, オフラインでも閲覧することが可能です.
+                </p>
+            </article>
+        </section>
+        <h2>Load</h2>
+        <article>
+            <p>
+                プレゼンテーションのWebページを作成時点で, ローカルのデータベースにURLが記録されます.
+            </p>
+            <figure>
+                <!--<img src="images/screenshots/screenshot-01-load-300x400.png" alt="プレゼンテーションページ一覧表示" />-->
+                <img src="images/screenshots/screenshot-11-300x400.png" alt="プレゼンテーションページ一覧表示画面" />
+                <img src="images/screenshots/screenshot-12-300x400.png" alt="プレゼンテーションページ遷移ダイアログ" />
+                <figcaption>プレゼンテーションページのロード</figcaption>
+            </figure>
+            <p>
+                Loadボタンを押すと, これまでに作成したプレゼンテーションのWebページのURL一覧が表示されるので,
+                もう一度閲覧したい, あるいは, 共有したいページを表示することが可能です.
+            </p>
+        </article>
+    </section>
+</div>
 
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/Korilakkuma/Express/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/Korilakkuma/Express/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h1>
-<a name="express" class="anchor" href="#express"><span class="octicon octicon-link"></span></a>Express</h1>
-
-<p>Android Application</p>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Express maintained by <a href="https://github.com/Korilakkuma">Korilakkuma</a></p>
+<!-- FOOTER  -->
+<div id="footer_wrap" class="outer">
+    <footer class="inner">
+        <p class="copyright">Express maintained by <a href="https://github.com/Korilakkuma">Korilakkuma (Tomohiro IKEDA)</a></p>
         <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
+    </footer>
+</div>
 
-              <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-          </script>
-          <script type="text/javascript">
-            try {
-              var pageTracker = _gat._getTracker("UA-41390233-1");
-            pageTracker._trackPageview();
-            } catch(err) {}
-          </script>
+<script type="text/javascript">
+<!--
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+//-->
+</script>
+<script type="text/javascript">
+<!--
+try {
+var pageTracker = _gat._getTracker("UA-41390233-1");
+pageTracker._trackPageview();
+} catch(err) {}
+//-->
+</script>
 
-
-  </body>
+</body>
 </html>
