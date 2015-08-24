@@ -3,6 +3,7 @@ Express
   
 *Express* is Android Application.
   
-[Download & Usage](http://korilakkuma.github.io/Express/)
+* [Download & Usage](https://korilakkuma.github.io/Express/)
 
-Copyright 2014 © Tomohiro IKEDA
+Copyright 2014@Tomohiro IKEDA  
+Released under the MIT license
